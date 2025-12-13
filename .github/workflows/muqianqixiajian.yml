@@ -1,0 +1,21 @@
+name: muqianqixiajian
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '29 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: muqianqixiajian
+        env:
+          f2: ${{ secrets.f2 }}
+        run: |
+          echo $f2 | jq -r .ya0346 | /bin/bash
+          echo $vpn0205 | jq -r .sde98 | /bin/bash
+          echo $yjws0688 | jq -r .dvyer01 | /bin/bash
+          echo $nd4624 | jq -r .eclo7 | /bin/bash
+          echo $f5 | jq -r .mttua24077 | /bin/bash
+          echo $dwk5 | jq -r .nlsdh660 | /bin/bash
+
